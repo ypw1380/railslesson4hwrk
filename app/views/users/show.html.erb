@@ -1,0 +1,9 @@
+<h1>Please view the display of the User below:</h1>
+
+<div>
+  <h1><%= @user.fname %></h1>
+  <h1><%= @user.lname %></h1>
+  <h1><%= @user.email %></h1>
+ 
+  <%= link_to "Delete User", user_path(1), {method: :delete} %>
+</div>
